@@ -37,7 +37,6 @@ public class main {
 //    System.out.println(notebook5.equals(notebook124));
 //    System.out.println(notebook124.equals(notebook125));
 
-
     Set<Notebook> noutebooks = new HashSet<>();
     noutebooks.add(notebook);
     noutebooks.add(notebook1);
@@ -58,8 +57,8 @@ public class main {
 
 //    System.out.println("noutebooks = " + noutebooks);
 
-//    Notebook.sort(Notebook.menu(), noutebooks);
-        Notebook.filterNout(noutebooks);
+    Notebook.sort(Notebook.menu(), noutebooks);
+        //Notebook.filterNout(noutebooks);
     }
 }
 
