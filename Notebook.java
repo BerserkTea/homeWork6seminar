@@ -85,25 +85,25 @@ public class Notebook {
         Map<String,String> customerChoise = new HashMap<String,String>();
         boolean checker = true;
         while (checker){
-        System.out.println("Введите какой критерий хотите изменить");
+        System.out.println("Введите номер критерия который хотите изменить, и нажмите Enter");
         System.out.println("1 - RAM");
         System.out.println("2 - Объем SSD");
         System.out.println("3 - Операционная система");
         System.out.println("4 - Цвет");
-        System.out.println("0 - Выход");
+        System.out.println("0 - Завершение ввода критерия и сортировака по заданных параметрам");
         Scanner scanner = new Scanner(System.in);
         int item = scanner.nextInt();
             switch (item){
                 case 1:
-                    System.out.println("Доступны следующие параметры RAM");
-                    System.out.println("1 - 4");
-                    System.out.println("2 - 8");
-                    System.out.println("3 - 16");
-                    System.out.println("4 - 32");
+                    System.out.println("Доступны следующие параметры RAM, введите параметр вручную и нажмите Enter");
+                    System.out.println("4");
+                    System.out.println("8");
+                    System.out.println("16");
+                    System.out.println("32");
                     customerChoise.put("ram", choiseLine());
                     break;
                 case 2:
-                    System.out.println("Доступны следующие параметры Объем SSD");
+                    System.out.println("Доступны следующие параметры Объем SSD, введите параметр вручную и нажмите Enter");
                     System.out.println("128");
                     System.out.println("256");
                     System.out.println("512");
@@ -111,14 +111,14 @@ public class Notebook {
                     customerChoise.put("ssd", choiseLine());
                     break;
                 case 3:
-                    System.out.println("Доступны следующие параметры Операционная система");
+                    System.out.println("Доступны следующие параметры Операционная система, введите параметр вручную и нажмите Enter");
                     System.out.println("1 - Windows");
                     System.out.println("2 - Linux");
                     System.out.println("3 - MacOS");
                     customerChoise.put("os", choiseLine());
                     break;
                 case 4:
-                    System.out.println("Доступны следующие параметры Цвет");
+                    System.out.println("Доступны следующие параметры Цвет, введите параметр вручную и нажмите Enter");
                     System.out.println("1 - Red");
                     System.out.println("2 - Orange");
                     System.out.println("3 - White");
